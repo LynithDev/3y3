@@ -97,11 +97,13 @@
         document.getElementById("encodeBtn").addEventListener("click", () => {
             const text = encode(encodeArea.value);
             decodeArea.value = text;
+            document.getElementById("encodeStatus").innerText = "Set decode box to encoded text!";
         });
 
         document.getElementById("decodeBtn").addEventListener("click", () => {
             const text = decode(decodeArea.value);
             encodeArea.value = text;
+            document.getElementById("decodeStatus").innerText = "Set encode box to decoded text!";
         });
 
         document.getElementById("encodeCopy").addEventListener("click", () => {
